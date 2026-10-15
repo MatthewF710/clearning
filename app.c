@@ -16,7 +16,7 @@ int show_data_types()
     strcpy(name, "Steven"); // string copy, copies Steven to name this uses the library string.h
     x = 5;
     z = COOL_NUMBER * x;
-    printf("x is %d, string is %s \n", x, name); // %d and %s are spacers for x and name. \n is required as it may sometimes error without them.
+    printf("x is %d, string is %s \n", x, name); // %d and %s are spacers for x and name. %d for int, %f for float, u can force f to display p digits after the decimal point, by putting .p btwn % and f, for ex %.2f. \n is required as it may sometimes error without it.
     return 1;
 }
 
