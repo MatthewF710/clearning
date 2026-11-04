@@ -23,7 +23,6 @@ void converter(char message[], int *n)
 void palindrome_checker(char message[], int n)
 {
     int truefalse = 1;
-
     for (int i = 0, j = n - 1; j >= i; i++, j--)
     {
         if (*(message + i) != *(message + j))
@@ -31,7 +30,6 @@ void palindrome_checker(char message[], int n)
             truefalse = 0;
         }
     }
-
     if (truefalse == 1)
     {
         printf("Palindrome \n");
@@ -48,10 +46,7 @@ int main(void)
     int n = 0;
 
     printf("Enter a message: ");
-
     converter(message, &n);
-
     palindrome_checker(message, n);
-
     return 0;
 }
